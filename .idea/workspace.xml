@@ -8,6 +8,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -34,11 +37,35 @@
     </option>
   </component>
   <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="akka-stream-game-client" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="akka-stream-game-client [file:/Users/Tomohiro/Documents/ScalaProject/akka-stream-game-client/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="akka-stream-game-client-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3137257506677" />
-        <entry key="$PROJECT_DIR$/build.sbt" value="3509830403" />
-        <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
+        <entry key="$PROJECT_DIR$" value="3137260654412" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="2750541043" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1156910148" />
       </map>
     </option>
     <option name="projectSyncType">
@@ -46,7 +73,6 @@
         <entry key="$PROJECT_DIR$/../../Play-Videos-master" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../PlayWebApp" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../SimpleWebApp" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="$PROJECT_DIR$/../akka-stream-game-server" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../hello-scala" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../play-samples-play-scala-chatroom-example" value="PREVIEW" />

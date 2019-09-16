@@ -60,16 +60,3 @@ class ClientTestSpec extends FunSuite with Matchers {
     outputMat.expectNext(List(domain.Player("tomo", Position(0, 1))))
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

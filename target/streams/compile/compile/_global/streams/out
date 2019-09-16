@@ -1,2 +1,6 @@
-[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /Users/Tomohiro/Documents/ScalaProject/akka-stream-game-client/project/target/.sbt-compilation-infos/akka-stream-game-client-compile/.sbt-idea-lock ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /Users/Tomohiro/Documents/ScalaProject/akka-stream-game-client/project/target/.sbt-compilation-infos/akka-stream-game-client-compile/.sbt-idea-lock.[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/Tomohiro/Documents/ScalaProject/akka-stream-game-client/src/main/scala/gui/KeyBoardHandler.scala:7:45: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: Again, Asterisk, Cancel, ChannelUp, ColoredKey0, DeadDiaeresis, E, EuroSign, F16, F19, F6, JapaneseRoman, Kana, Meta, Numpad4, P, Printscreen, RomanCharacters, Separator, Undo[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def handle(keyEvent: KeyEvent) = keyEvent.code match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere was one unchecked warning; re-run with -unchecked for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

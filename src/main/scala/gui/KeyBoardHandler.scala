@@ -5,9 +5,9 @@ import scalafx.scene.input.{KeyCode, KeyEvent}
 
 class KeyBoardHandler(keyboardEventsReceiver: ActorRef) {
   def handle(keyEvent: KeyEvent) = keyEvent.code match {
-    case KeyCode.Up => keyboardEventsReceiver ! "up"
-    case KeyCode.Down => keyboardEventsReceiver ! "down"
-    case KeyCode.Right => keyboardEventsReceiver ! "right"
-    case KeyCode.Left => keyboardEventsReceiver ! "left"
+    case KeyCode.Up => keyboardEventsReceiver ! "UP"
+    case KeyCode.Down => keyboardEventsReceiver ! "DOWN"
+    case KeyCode.Right => keyboardEventsReceiver ! "RIGHT"
+    case KeyCode.Left => keyboardEventsReceiver ! "LEFT"
   }
 }

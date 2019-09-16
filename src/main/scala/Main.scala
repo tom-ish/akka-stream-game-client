@@ -10,7 +10,7 @@ object Main {
     implicit val actorSystem = ActorSystem()
     implicit val actorMaterializer = ActorMaterializer()
 
-    val name = StdIn.readLine()
+    val name = StdIn.readLine("Enter your name : ")
 
     val client = new Client(name)
 

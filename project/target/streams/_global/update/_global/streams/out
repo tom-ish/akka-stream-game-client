@@ -1,0 +1,3 @@
+[debug] "not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/Users/Tomohiro/Documents/ScalaProject/akka-stream-game-client/project/"), "akka-stream-game-client-build")...
+[debug] Done updating ProjectRef(uri("file:/Users/Tomohiro/Documents/ScalaProject/akka-stream-game-client/project/"), "akka-stream-game-client-build")

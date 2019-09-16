@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="314ce522-f33d-450d-b499-48e24b22a004" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1QumFjzyr8aRr4xyQrX6sP7xm8N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="3137257506677" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="3509830403" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../Play-Videos-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../PlayWebApp" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../SimpleWebApp" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+        <entry key="$PROJECT_DIR$/../akka-stream-game-server" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../hello-scala" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../play-samples-play-scala-chatroom-example" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../play-samples-play-scala-websocket-example" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../play-scala-login" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../play-scala-starter" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../play-tutorial" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../reactivemongo-demo-app-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../scala-getting-started" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../splio-technical-test" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="314ce522-f33d-450d-b499-48e24b22a004" name="Default Changelist" comment="" />
+      <created>1568628753313</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568628753313</updated>
+    </task>
+    <servers />
+  </component>
+</project>

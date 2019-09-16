@@ -4,9 +4,20 @@ import akka.http.scaladsl.model.ws.{Message, TextMessage, WebSocketRequest}
 import akka.stream.{ActorMaterializer, OverflowStrategy}
 import akka.stream.scaladsl.{Keep, Sink, Source}
 import akka.stream.testkit.scaladsl.TestSink
+import domain.{Player, Position}
+import gui.{Display, KeyBoardHandler}
 import org.scalatest.{FunSuite, Matchers}
+import scalafx.application
+import scalafx.application.{JFXApp, Platform}
+import scalafx.scene.Scene
 import scalafx.scene.input.{KeyCode, KeyEvent}
+import scalafx.scene.layout.{AnchorPane, StackPane}
+import scalafx.scene.paint.Color
+import scalafx.scene.shape.Circle
+import scalafx.scene.text.Text
 import spray.json.DefaultJsonProtocol._
+
+import scala.io.StdIn
 
 class ClientTestSpec extends FunSuite with Matchers {
   test("should be able to login player") {
@@ -45,48 +56,20 @@ class ClientTestSpec extends FunSuite with Matchers {
     inputMat ! "up"
 
     outputMat.request(2)
-    outputMat.expectNext(List(Player("tomo", Position(0, 0))))
-    outputMat.expectNext(List(Player("tomo", Position(0, 1))))
+    outputMat.expectNext(List(domain.Player("tomo", Position(0, 0))))
+    outputMat.expectNext(List(domain.Player("tomo", Position(0, 1))))
   }
 }
 
 
-object Main {
-  def main(args: Array[String]): Unit = {
-    implicit val actorSystem = ActorSystem()
-    implicit val actorMaterializer = ActorMaterializer()
 
-    val client = Client("Tomo")
 
-    new KeyBoardHandler()
-  }
-}
 
-class Client(playerName: String)(implicit val actorSystem: ActorSystem, actorMaterializer: ActorMaterializer) {
-  import spray.json._
-  implicit val positionFormat = jsonFormat2(Position)
-  implicit val playerFormat = jsonFormat2(Player)
 
-  val webSocketFlow = Http().webSocketClientFlow(WebSocketRequest(s"ws://localhost:8080/?playerName=$playerName")).collect {
-    case TextMessage.Strict(txt) => txt.parseJson.convertTo[List[Player]]
-  }
 
-  def run[A, B](input: Source[String, A], output: Sink[List[Player], B]) = {
-       input.map(direction => TextMessage(direction))
-        .viaMat(webSocketFlow)(Keep.both) // keep the materialized Future[WebSocketUpgradeResponse]
-        .toMat(output)(Keep.both) // also keep the Future[Done]
-        .run()
-  }
-}
 
-case class Player(name: String, position: Position)
-case class Position(x: Int, y: Int)
 
-class KeyBoardHandler(keyboardEventsReceiver: ActorRef) {
-  def handle(keyEvent: KeyEvent) = {
-    case KeyCode.Up => keyboardEventsReceiver ! "up"
-    case KeyCode.Down => keyboardEventsReceiver ! "down"
-    case KeyCode.Right => keyboardEventsReceiver ! "right"
-    case KeyCode.Left => keyboardEventsReceiver ! "left"
-  }
-}
+
+
+
+
